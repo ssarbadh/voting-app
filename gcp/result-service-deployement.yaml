@@ -21,6 +21,6 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: voting-app
+      app: result-app
       type: front-end
-      name: voting
+      name: result
