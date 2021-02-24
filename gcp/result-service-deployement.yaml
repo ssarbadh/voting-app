@@ -3,11 +3,11 @@ kind: Deployment
 metadata: 
   name: result-app-deployment
   labels:
-    app: result-app
+    app: voting-app
 spec:
   template:
     metadata:
-      name: result-app
+      name: voting-app
       labels:
         app: voting-app
         type: front-end
@@ -21,6 +21,6 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: result-app
+      app: voting-app
       type: front-end
       name: result
